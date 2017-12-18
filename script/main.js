@@ -1,5 +1,5 @@
 function showMap() {
-  var myChart = echarts.init(document.getElementById('d_map'))
+  var myChart = echarts.init(document.getElementById('d_main'))
 
   var dataAll = [389000, 370000, 324000, 262000 ,259000, 214000, 232000, 196000, 176000, 133000];
   var yAxisData = ['手机','家电','家具','家纺家饰','男装','女装','运动户外','箱包','鞋','个护家清'];
@@ -36,7 +36,7 @@ function showMap() {
       {
         text: '全类目品牌TOP10',
         x: '2%',
-        y: '7%',
+        y: '6%',
         textStyle: {
           color:"#fff",
           fontSize:"12"

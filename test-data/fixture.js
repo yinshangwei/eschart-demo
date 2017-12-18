@@ -241,7 +241,7 @@ var data = [
   {name: "牡丹江", value: 22399},
   {name: "绍兴", value: 22300},
   {name: "扬州", value: 22331},
-  {name: "宝鸡", value: 223402},
+  {name: "宝鸡", value: 22342},
   {name: "徐州", value: 22304},
   {name: "乌鲁木齐", value: 22341},
   {name: "济南", value: 22305},
