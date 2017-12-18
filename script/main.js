@@ -1,8 +1,8 @@
 function showMap() {
   var myChart = echarts.init(document.getElementById('d_main'))
 
-  var dataAll = [389000, 370000, 324000, 262000 ,259000, 214000, 232000, 196000, 176000, 133000];
-  var yAxisData = ['手机','家电','家具','家纺家饰','男装','女装','运动户外','箱包','鞋','个护家清'];
+  var top10Data = [389000, 370000, 324000, 262000 ,259000, 214000, 232000, 196000, 176000, 133000];
+  var yAxisTop10Data = ['手机','家电','家具','家纺家饰','男装','女装','运动户外','箱包','鞋','个护家清'];
 
   function convertData(data) {
     var res = []
@@ -52,6 +52,7 @@ function showMap() {
         }
       }
     ],
+    backgroundColor: '#0f375f',
     grid: [
       {x: '5%', y: '10%', width: '20%', height: '40%'},
     ],
@@ -68,8 +69,8 @@ function showMap() {
       y: 'top',
       feature : {
         mark : {show: true},
-        dataView : {show: true, readOnly: false},
         magicType : {show: true, type: ['line', 'bar']},
+        dataView : {show: true, readOnly: false},
         restore : {show: true},
         saveAsImage : {show: true}
       }
@@ -150,7 +151,9 @@ function showMap() {
     ],
     yAxis: [
       {
-        gridIndex: 0, interval: 0, data: yAxisData.reverse(),
+        gridIndex: 0,
+        interval: 0,
+        data: yAxisTop10Data.reverse(),
         axisTick: {show: false}, axisLabel: {show: true}, splitLine: {show: false},
         axisLine: {show: true, lineStyle: {color: "#6173a3"}}
       }
@@ -214,7 +217,7 @@ function showMap() {
         barWidth: '45%',
         itemStyle: {normal: {color: '#86c9f4'}},
         label: {normal: {show: true, position: "right", textStyle: {color: "#9EA7C4"}}},
-        data: dataAll.sort()
+        data: top10Data.sort()
       },
       {
         name: '销售平台占比',
