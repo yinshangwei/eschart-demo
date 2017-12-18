@@ -80,31 +80,30 @@ function showMap() {
       splitNumber: 3,
       pieces: [
         {
-          max: 100000,
-          min: 80000,
+          min: 60000,
           label: '第一档',
           color: '#f4fc6c'
         },
         {
-          max: 80000,
-          min: 60000,
+          max: 60000,
+          min: 40000,
           label: '第二档',
           color: '#fc5353',
         },
         {
-          max: 60000,
-          min: 40000,
+          max: 40000,
+          min: 20000,
           label: '第三档',
           color: '#ff60c5'
         },
         {
-          max: 40000,
-          min: 20000,
+          max: 20000,
+          min: 10000,
           label: '第四档',
           color: '#e68b55'
         },
         {
-          max: 20000,
+          max: 10000,
           min: 0,
           label: '第五档',
           color: '#9a68ff'
